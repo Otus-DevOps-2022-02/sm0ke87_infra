@@ -13,6 +13,7 @@ testapp_IP = 51.250.64.237
 testapp_port = 9292
 
 Создание инстанса:
+
 yc compute instance create \
   --name reddit-app \
   --hostname reddit-app \
@@ -22,4 +23,4 @@ yc compute instance create \
   --metadata serial-port-enable=1 \
   --ssh-key ~/.ssh/sm0ke.pub \
   --zone=ru-central1-a \
-  --metadata-from-file user-data=meta.yaml
+  --metadata-from-file user-data=metafile.yaml
