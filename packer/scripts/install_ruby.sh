@@ -2,7 +2,7 @@
 apt-get install apt-transport-https ca-certificates -y
 sleep 5
 apt-get update -y
-sleep 100
+sleep 20
 apt-get install ruby-full -y
 sleep 5
 apt-get install ruby-bundler -y
