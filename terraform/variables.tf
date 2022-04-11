@@ -1,8 +1,8 @@
 variable cloud_id {
-  description = "b1gtp69okn2sv7c6cgm5"
+  description = "Cloud"
 }
 variable folder_id {
-  description = "b1gdjb0a2k4e2avgrigr"
+  description = "Folder"
 }
 variable zone {
   description = "Zone"
@@ -11,20 +11,20 @@ variable zone {
 }
 variable public_key_path {
   # Описание переменной
-  description = "~/.ssh/sm0ke.pub"
+  description = "public key for ssh"
 }
 variable image_id {
-  description = "fd8kst6nofct7j1dul9p"
+  description = "Disk image"
 }
 variable subnet_id {
-  description = "e9bhbms651fb7bpanpgg"
+  description = "Subnet"
 }
 variable service_account_key_file {
-  description = "../../../../appuser_key.json"
+  description = "service account key file"
 }
 
-variable pricate_key_path {
-  description = "~/.ssh/sm0ke"
+variable private_key_path {
+  description = "private key path"
 }
 
 variable app_instance_zone {
