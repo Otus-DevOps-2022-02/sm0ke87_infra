@@ -1,3 +1,4 @@
+/terrafor,/secrets
 *.tfstate
 *.tfstate.*.backup
 *.tfstate.backup
