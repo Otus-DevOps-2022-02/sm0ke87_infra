@@ -1,6 +1,5 @@
 resource "yandex_alb_load_balancer" "test-balancer-app" {
   name        = "my-load-balancer"
-
   network_id  = var.network_id
 
   allocation_policy {
@@ -26,8 +25,23 @@ resource "yandex_alb_load_balancer" "test-balancer-app" {
     }
   }
 }
+
 resource "yandex_alb_http_router" "test-router-app" {
   name      = "my-http-router"
+}
+
+resource "yandex_alb_virtual_host" "test-virtual-host" {
+  name           = "test-virtual-host"
+  http_router_id = yandex_alb_http_router.test-router-app.id
+  route {
+    name = "reddit-route"
+    http_route {
+      http_route_action {
+        backend_group_id = yandex_alb_backend_group.test-backend-group-app.id
+        timeout          = "3s"
+      }
+    }
+  }
 }
 
 resource "yandex_alb_backend_group" "test-backend-group-app" {
