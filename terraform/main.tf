@@ -36,6 +36,7 @@ resource "yandex_compute_instance" "app" {
     user        = "ubuntu"
     agent       = false
     private_key = file(var.private_key_path)
+    timeout     = "1m"
   }
 
   metadata = {

@@ -6,7 +6,7 @@ variable folder_id {
 }
 variable zone {
   description = "Zone"
-  # Значение по умолчанию
+  #Значение по умолчанию
   default = "ru-central1-a"
 }
 variable public_key_path {
@@ -30,4 +30,8 @@ variable private_key_path {
 variable app_instance_zone {
   description = "Zone for test app"
   default     = "ru-central1-a"
+}
+
+variable network_id {
+ description = "network_id"
 }
