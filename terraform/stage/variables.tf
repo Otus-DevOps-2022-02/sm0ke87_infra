@@ -25,7 +25,7 @@ variable service_account_key_file {
 
 variable private_key_path {
   description = "private key path"
-  default = "~/.ssh/sm0ke"
+  default     = "~/.ssh/sm0ke"
 }
 
 variable app_instance_zone {
@@ -34,7 +34,7 @@ variable app_instance_zone {
 }
 
 variable network_id {
- description = "network_id"
+  description = "network_id"
 }
 
 variable app_disk_image {
