@@ -25,6 +25,7 @@ variable service_account_key_file {
 
 variable private_key_path {
   description = "private key path"
+  default = "~/.ssh/sm0ke"
 }
 
 variable app_instance_zone {
@@ -34,4 +35,14 @@ variable app_instance_zone {
 
 variable network_id {
  description = "network_id"
+}
+
+variable app_disk_image {
+  description = "Disk image for app"
+  default     = "reddit-app-base"
+}
+
+variable db_disk_image {
+  description = "Disk image for db"
+  default     = "reddit-db-base"
 }
