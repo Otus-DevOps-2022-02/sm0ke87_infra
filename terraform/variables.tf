@@ -48,9 +48,13 @@ variable db_disk_image {
 }
 
 variable "access_key" {
-  description = "access key"
+  description = "access_key"
 }
 
 variable "secret_key" {
-  description = "secret key"
+  description = "secret_key"
+}
+
+variable "bucket_name" {
+  description = "storage-backet-name"
 }

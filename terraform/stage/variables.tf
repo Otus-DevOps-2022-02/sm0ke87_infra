@@ -46,3 +46,10 @@ variable db_disk_image {
   description = "Disk image for db"
   default     = "reddit-db-base"
 }
+variable "access_key" {
+  description = "access_key"
+}
+
+variable "secret_key" {
+  description = "secret_key"
+}
