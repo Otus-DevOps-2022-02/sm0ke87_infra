@@ -54,7 +54,3 @@ variable "access_key" {
 variable "secret_key" {
   description = "secret_key"
 }
-
-variable "bucket_name" {
-  description = "storage-backet-name"
-}

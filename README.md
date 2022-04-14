@@ -1,8 +1,12 @@
-<h1 align="center">Привтсвую в моем репозитарии
+<h1 align="center">Приветствую в моем репозитарии
 <img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32"/></h1>
 <h3 align="center">Тут собираются артефакты от моего прохождения курса от OTUS</h3>
 
-#terraform-1
+# terraform-2
+* Созданы модули app и db как отдельные конфигурационные файлы
+* Созданы папки stage и prod
+
+# terraform-1
 * Создан ресурс yandex_compute_instance.reddit-app из образа reddit-base-1649162103.
 * Добавлены ключи для доступа по SSH.
 * Добавлены провиженеры для развертывания приложения.
@@ -19,7 +23,7 @@
 sm0ke87 Infra repository
 
 Прыжок через джампхост в одну команду:
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=ssh -J sm0ke@84.201.156.63 sm0ke@10.128.0.17)](https://git.io/typing-svg)
+ssh -J sm0ke@84.201.156.63 sm0ke@10.128.0.17
 bastion_IP = 84.201.156.63
 someinternalhost_IP = 10.128.0.17
 
