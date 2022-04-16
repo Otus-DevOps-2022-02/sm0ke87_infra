@@ -1,8 +1,8 @@
 all:
   children:
-    app:
+    appserver:
       hosts:
         51.250.84.243
-    db:
+    dbserver:
       hosts:
         51.250.79.122
