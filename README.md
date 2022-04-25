@@ -2,6 +2,24 @@
 <img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32"/></h1>
 <h3 align="center">Тут собираются артефакты от моего прохождения курса от OTUS</h3>
 
+# ansible-2
+* Созданы плейбуки согласно ДЗ:
+  * Плейбуки с управлением по тэгам
+  * Отдельные плейбуки
+  * Мультиблейбук
+* Подключен ansible как провизионер в пакер
+
+# ansible
+* Опробованы модули ```ping, apt, command, service, systemd```
+* Создан простой плейбук Clone.yml для установки из репозитария express42
+Дополнительно:
+  * После удаления папки reddit и запуске повторно плейбука, ansible повторяет установку из репозитария, чем сообщает об этом через переменную change
+---------
+* Задачка со зведочкой:
+  * Найден и перелопачен py скрипт
+  * Для работы нужно создать json из terraform ```terraform show -json > ../../ansible/terra.json ```
+  * запуск ```ansible all -m ping -i dyn_inventory.py```
+
 # terraform-2
 * Созданы модули app и db как отдельные конфигурационные файлы
 * Созданы папки stage и prod

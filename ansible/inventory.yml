@@ -2,7 +2,7 @@ all:
   children:
     appserver:
       hosts:
-        51.250.84.243
+        51.250.1.131
     dbserver:
       hosts:
-        51.250.79.122
+        51.250.9.6
