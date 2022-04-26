@@ -7,3 +7,5 @@
 .idea
 *.retry
 backend.tf
+jdauphant.nginx
+vault.key
